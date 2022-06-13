@@ -1,0 +1,30 @@
+{
+  "name": "hardhat-erc721-uups",
+  "version": "1.0.0",
+  "description": "hardhat-erc721-uups",
+  "main": "index.js",
+  "author": "lion.888@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "lint": "solhint 'contracts/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format": "prettier --write .",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
+    "@openzeppelin/hardhat-upgrades": "^1.18.1",
+    "@nomiclabs/hardhat-etherscan": "^3.0.4",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "hardhat": "^2.9.7",
+    "hardhat-contract-sizer": "^2.5.1",
+    "hardhat-deploy": "^0.11.10",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.21"
+  },
+  "mocha": {
+    "timeout": 10000000
+  }
+}
